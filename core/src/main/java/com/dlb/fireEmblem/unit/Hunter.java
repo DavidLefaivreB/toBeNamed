@@ -1,6 +1,6 @@
-package ca.dlb.fireEmblem.unit;
+package com.dlb.fireEmblem.unit;
 
-public class Pirate implements UnitStats
+public class Hunter implements UnitStats
 {
     @Override
     public int getMovement()

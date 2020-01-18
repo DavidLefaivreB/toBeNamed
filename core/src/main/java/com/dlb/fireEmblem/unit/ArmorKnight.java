@@ -1,4 +1,4 @@
-package ca.dlb.fireEmblem.unit;
+package com.dlb.fireEmblem.unit;
 
 public class ArmorKnight implements UnitStats
 {
