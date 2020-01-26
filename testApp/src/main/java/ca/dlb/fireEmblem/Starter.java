@@ -2,8 +2,10 @@ package ca.dlb.fireEmblem;
 
 public class Starter
 {
-    public static void main(String[] args)
+    public static void main(final String[] args)
     {
-        new TestApp().run();
+        //new TestApp().run();
+
+        new Game().start();
     }
 }

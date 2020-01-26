@@ -42,12 +42,17 @@ public class UnitMovementCalculatorTest
     @Test
     public void movingAnUnitOnAWaterTile_theMoveIsRefused()
     {
-        final GameMap gameMap = new GameMap(20, 20);
-        gameMap.addTile(1, 0, new WaterTile());
-
-        final Point farAwayTile = new Point(6, 0);
+        final GameMap gameMap = getGameMapWithWater();
         movementCalculator.setGameMap(gameMap);
 
         assertThat(movementCalculator.isValidMove(STARTING_TILE, new Point(1, 0)), is(false));
+    }
+
+    private GameMap getGameMapWithWater()
+    {
+        final GameMap gameMap = new GameMap(20, 20);
+        gameMap.addTile(1, 0, new WaterTile());
+
+        return gameMap;
     }
 }
